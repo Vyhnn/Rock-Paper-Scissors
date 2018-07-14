@@ -36,7 +36,7 @@ function playRound(playerSelection) {
     }
   }
 
-  document.getElementsByClassName("result")[0].innerHTML="Player chose "+playerSelection+"<br>"+"Computer chose "+computerSelection+"<br>"+result;
+  document.getElementsByClassName("result")[0].innerHTML="<p>Player chooses "+playerSelection+"</p><p>Computer chooses "+computerSelection+"</p><p id='result'>"+result+"</p>";
   if(result=="Player wins!") {
     updateScore("player")
   }
@@ -55,6 +55,7 @@ function updateScore(winner) {
       score = 0
       document.getElementById('playerScore').innerHTML = score
       document.getElementById('compScore').innerHTML = score
+      document.getElementsByClassName("result")[0].innerHTML="<p>Pick One<p>";
       alert("Congratulation! You win!")
     }
   }
@@ -66,6 +67,7 @@ function updateScore(winner) {
       score = 0
       document.getElementById('playerScore').innerHTML = score
       document.getElementById('compScore').innerHTML = score
+      document.getElementsByClassName("result")[0].innerHTML="<p>Pick One<p>";
       alert("Computer wins! Better luck next time.")
     }
   }

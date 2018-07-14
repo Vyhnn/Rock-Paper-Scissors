@@ -1,3 +1,44 @@
 body {
   text-align: center;
+  font-family: 'Dosis', sans-serif;
+  margin: 80px;
+  background-color: #222;
+  color: #EEE;
+}
+
+button {
+  padding: 50px;
+  margin: 20px;
+  background-color: #EEE;
+  border: none;
+}
+
+button:focus {
+  outline:0;
+}
+
+button:active {
+  background-color: #AAA;
+}
+
+i {
+  font-size: 50px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 25px;
+  margin: 0;
+  padding: 5px;
+}
+
+.score {
+  margin-bottom: 40px;
+}
+
+#result {
+  font-size: 40px;
 }

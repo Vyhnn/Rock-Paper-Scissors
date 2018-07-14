@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!--css-->
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 <body>
   <div class='title'>
@@ -9,16 +12,17 @@
   </div>
 
   <div class='selectButtons'>
-    <button type="button" id='rockBtn'>Rock</button>
-    <button type="button" id='paperBtn'>Paper</button>
-    <button type="button" id='ScissorsBtn'>Scissors</button>
+    <button type="button" id='rockBtn'><i class="far fa-hand-rock"></i></button>
+    <button type="button" id='paperBtn'><i class="far fa-hand-paper"></i></button>
+    <button type="button" id='ScissorsBtn'><i class="far fa-hand-peace"></i></button>
   </div>
   <div class='score'>
     <p>Computer Score: <span id='compScore'>0<span></p>
     <p>Player Score: <span id='playerScore'>0<span></p>
   </div>
-  <div class='result'>Pick One</div>
+  <div class='result'><p>Pick One<p></div>
 
+  <!--js-->
   <script src="main.js"></script>
 </body>
 </html>
