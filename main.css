@@ -11,6 +11,7 @@ button {
   margin: 20px;
   background-color: #EEE;
   border: none;
+  border-radius: 5px;
 }
 
 button:focus {
